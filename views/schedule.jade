@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  
+      #wrap
+           #topmenu
+               
+               #box
+                     a(href='login') Login
+               #box
+                     a(href='/') Home 
+           #home
+               #message
+                   if message
+                       h1.text-center.error-message #{message}
+               h2 Please complete the form in order to create a new url image schedule
+               #form
+                form#createSchedule(name="schedule",method="post",action="/schedule")
+                    label URL
+                    input#url(type="text", name="url")
+                    br
+                    label File Name
+                    input#file(type="text", name="file")
+                    br
+                                      
+                    button#schSubmit(type="submit") submit
+          
+           
+         
+
+
+                 
+

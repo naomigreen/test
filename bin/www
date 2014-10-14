@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+var debug = require('debug')('nammy');
+var app = require('../app');
+var JSFtp = require("jsftp");
+
+
+var Ftp = new JSFtp({
+  host: "dev.thewowagency.co.uk",
+  port: 21,
+  user: "project12", 
+  pass: "27kdhflwfl!" 
+
+});
+
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});

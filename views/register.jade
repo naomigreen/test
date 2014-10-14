@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  
+      #wrap
+           #topmenu
+               
+               #box
+                     a(href='login') Login
+               #box
+                     a(href='/') Home
+          
+           #home
+               #message
+                   if message
+                       h1.text-center.error-message #{message}
+               h2 Please complete the registration form
+               #form
+                form#formAddUser(name="adduser",method="post",action="/register")
+                    label User Name
+                    input#inputUserName(type="text", name="username")
+                    br
+                    label Email
+                    input#inputEmail(type="email", name="email")
+                    br
+                    label Password
+                    input#password(type="text", name="password")
+                    br
+                    label First Name
+                    input#firatname(type="text", name="firstname")
+                    br 
+                    label Surname
+                    input#surname(type="text", name="surname")
+                    br                     
+                    button#btnSubmit(type="submit") submit
+          
+           
+         
+
+
+                 
+

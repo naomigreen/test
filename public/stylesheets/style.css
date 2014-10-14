@@ -1,0 +1,123 @@
+
+root{
+    display: block;
+}
+body {
+    margin: 0px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image:url('/../images/bg4.jpg');
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+#wrap {
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 0px;
+     overflow: scroll;    
+        
+    }
+    
+    #topmenu{
+     width: 1345px;
+     height: 115px;
+     position: fixed;
+     margin: auto;
+     margin-top: 0px;  
+     font-family:"Times New Roman",Georgia,serif;
+     font-size: 18px;
+     background-image: url('/../images/side4.jpg');
+     border: 2px solid #194775;
+     
+    }
+    
+         
+    #content{
+    background-image:url('/../images/side4.jpg');
+    margin: 180px auto;
+    width: 850px;
+    height: 800px;
+    border: 2px solid #194775;
+    font-family:"Times New Roman",Georgia,serif;
+    font-size: 18px;
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+    
+    }
+
+     #home{
+    background-image:url('/../images/side4.jpg');
+    margin: 180px auto;
+    width: 850px;
+    height: 800px;
+    border: 2px solid #194775;
+    font-family:"Times New Roman",Georgia,serif;
+    font-size: 18px;
+    text-align: left;
+    
+    
+    }
+
+   
+      #leftside{
+     float: left;
+     margin-top: 180px;
+     margin-left: 2px;
+     width: 426px;
+     height: 578px;
+     position: fixed;
+     border: 1px solid #194775; 
+     text-align: left;
+     background-image:url('/../images/side4.jpg');
+     font-family:"Times New Roman",Georgia,serif;
+     font-size: 18px;
+     text-decoration-color: #EFF8FB;
+
+    }
+
+    
+
+      #footer{
+     float: bottom;
+     width: 100%;
+     height: 11%;
+     margin-top: 610px;
+     font-family:"Times New Roman",Georgia,serif;
+     font-size: 12px;
+     background-image: url('/../images/side4.jpg');
+     border: 2px solid #194775;
+        
+    }
+      
+    
+
+     #box{
+     background-image:url('/../images/box.jpg');
+     border: 1px solid #194775;
+     width: 100px;
+     height: 50px;
+     float: left;
+     font-size: 14px;
+     text-align: center;
+     margin-left: 90px;
+     margin-top: 35px;
+    
+
+ }
+
+    #form{
+    width: 400px;
+    height: 150px;
+    padding: 100px;
+     
+    }
+
+   h1.error-message{
+    color: red;
+}

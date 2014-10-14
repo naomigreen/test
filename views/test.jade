@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  
+      #wrap
+           #topmenu
+               
+               #box
+                     a(href='login') Login
+               #box
+                     a(href='/') Home 
+           #home
+               #message
+                   if message
+                       h1.text-center.error-message #{message}
+               h2 Please enter a url and file name
+               #form
+                form#formaddimage(name="addimage",method="post",action="/test")
+                    label Enter url
+                    input#url(type="text", name="url")
+                    br
+                    label Enter file
+                    input#file(type="text", name="file")
+                    br
+                    button#btnSubmit(type="submit") Submit
+           
+         
+
+
+                 
+

@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  
+      #wrap
+           #topmenu
+               
+               #box
+                     a(href='logout') Logout
+               #box
+                     a(href='/') Home
+           #leftside
+               Image tools for editing  
+           #content
+               #message
+                   if message
+                       h1.text-center.error-message #{message}
+               h2 List all images in user account
+               #form
+                form#formaddimage(name="addimage",method="post",action="/test")
+                    label Enter url
+                    input#url(type="text", name="url")
+                    br
+                    label Enter file
+                    input#file(type="text", name="file")
+                    br
+                    button#btnSubmit(type="submit") Submit
+           
+         
+
+
+                 
+

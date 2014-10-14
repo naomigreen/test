@@ -1,0 +1,27 @@
+extends layout
+
+block content
+     if error
+         h3= error
+     #wrap
+           #topmenu
+                #box
+                     a(href='register') Register   
+                #box
+                     a(href='/') Home 
+           #home
+               #message
+                   if message
+                       h1.text-center.error-message #{message}
+               h2 Please sign in 
+               #form
+                form#formGetUser(name="getuser",method="post",action="/login")
+                    label User Name
+                    input#inputUserName(type="text", name="username")
+                    br
+                    label Password
+                    input#password(type="password", name="password")
+                    br         
+                    button#btnSubmit(type="submit") Login
+                    
+           
